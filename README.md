@@ -23,3 +23,25 @@ The system prompt used can be found below:
 
 > Please provide only the rewritten article as your output, without any additional text or tags. Preserve all formatting and HTML. Do not write "Rewritten article for 5th graders"; after the main ideas, just start writing the article itself.
 # Results
+On average, the LLM edited text showed:
+- A 3.7 point drop on the [SMOG](https://en.wikipedia.org/wiki/SMOG)
+- 4.3 grade level drop on the [Flesch-Kincaid Grade Level](https://arc.net/l/quote/bywjvrug)
+- 3.9 point drop on [Gunning-fog index](https://en.wikipedia.org/wiki/Gunning_fog_index)
+- 23 point increase on [Flech-Kincaid Readability](https://arc.net/l/quote/hayttdag)
+
+<p float="left">
+  <img src="https://github.com/alexanderSolod/MedExplain/assets/47961133/484d8050-c329-4f66-8219-6d5c24c9c935" width = 500/>
+  <img src="https://github.com/alexanderSolod/MedExplain/assets/47961133/3ad88b74-5450-4749-882c-2d3d9daa136b" width = 500/>
+</p>
+
+On average, the system was able to drop the average readability score from **university level** to **early high school**.
+
+The analysis notebook can be found [here](https://github.com/alexanderSolod/MedExplain/blob/main/claude_analysis.ipynb)
+
+# Translation pipeline
+The other innovation is the introduction of an automatic translation pipeline, but as of right now that is still a work in progress. The pipeline should be run once a day, and will work like this 
+1. Fetch new articles posted to https://news.yale.edu/topics/health-medicine (or any link)
+2. Scrape articles contents and translate using LLM
+3. Publish translated articles using a new template
+
+As of right now we can scrape new articles and reliably contents for only some of the links
