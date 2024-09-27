@@ -1,6 +1,6 @@
 NOTE: this is still a work in progress. More details will be added soon
 # MedExplain: A Tool To Make Frontier Medical Research More Accessible 
-Medical research progresses at a blinding pace, however the reading at which most texts are written is inaccessible to a vast majority of readers. MedExplain is a tool that aims to bridge this gap by using Large Language Models to translate the text to a more accessible reading level. Now, more individuals that are interested in medical research can stay up to date with medical advancements, written in a language that they can easily understand.
+Medical research progresses at a blinding pace, however the reading level at which most texts are written is inaccessible to a vast majority of readers. MedExplain is a tool that aims to bridge this gap by using Large Language Models to translate the text to a more accessible reading level. Now, more individuals that are interested in medical research can stay up to date with medical advancements, written in a language that they can easily understand.
 
 # Motivation
 This tool is building upon the idea introduced by [Ayre Et Al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10973278/) in which GPT-3.5 turbo was used to simplify health information documents. LLM wise, the main improvements of MedExplain are
